@@ -25,8 +25,8 @@ public class Main {
         Scanner stdin = new Scanner(System.in);
         int num1 = stdin.nextInt();
         int num2 = stdin.nextInt();
-        System.out.println( calc.add(5, 3));
-        System.out.println( calc.multiply(5, 3));
-        System.out.println( Calculator.subtract(5, 3));
+        System.out.println( calc.add(num1, num2));
+        System.out.println( calc.multiply(num1, num2));
+        System.out.println( Calculator.subtract(num1, num2));
     }
 }
