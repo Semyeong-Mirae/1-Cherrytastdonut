@@ -1,4 +1,4 @@
-package 미래인재5일차.calculatot;
+import java.util.Scanner;
 
 interface Calculator {
     int add(int a, int b);
@@ -22,9 +22,11 @@ class SimpleCalculator implements Calculator {
 public class Main {
     public static void main(String[] args) {
         SimpleCalculator calc = new SimpleCalculator();
-
-        System.out.println(+ calc.add(5, 3));
-        System.out.println(+ calc.multiply(5, 3));
-        System.out.println(+ Calculator.subtract(5, 3));
+        Scanner stdin = new Scanner(System.in);
+        int num1 = stdin.nextInt();
+        int num2 = stdin.nextInt();
+        System.out.println( calc.add(5, 3));
+        System.out.println( calc.multiply(5, 3));
+        System.out.println( Calculator.subtract(5, 3));
     }
 }
